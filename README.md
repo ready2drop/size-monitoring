@@ -1,13 +1,5 @@
-# Size Monitoring by detection algorithm  
-
-
-
-# Features
- - Support for Comparision of (FPS & Time) Graph
- - How to run Code in Google Colab
- - Code can run on Both (CPU & GPU)
- - Video/WebCam/External Camera/IP Stream Supported
-
+# Size Monitoring by YOLOv8  
+The algorithm is elaborated on our paper Deep Learning-Based Pancreas Detection and Size Monitoring with Data Augmentation for Medical Imaging Analysis.
 
 # Steps to run Code
  
@@ -16,46 +8,22 @@
  from google.colab import drive
  drive.mount("/content/drive")
  ```
- ### Clone the repository.
- git clone https://github.com/ready2drop/yolov7_pose.git
-
- ### Go to the cloned folder.
- ```
- cd yolov7_pose
- ```
- ### Create a virtual envirnoment (Recommended, If you dont want to disturb python packages)
- ```
- # For Linux Users
- python3 -m venv psestenv
- source psestenv/bin/activate
-
- # For Window Users
- python3 -m venv psestenv
- cd psestenv
- cd Scripts
- activate
- cd ..
- cd ..
- ```
-
- ### Upgrade pip with mentioned command below.
- ```
- pip install --upgrade pip
- ```
-
  ### Install requirements with mentioned command below.
  ```
  pip install -r requirements.txt
  ```
 
- - Download yolov7 pose estimation weights from [link](https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-w6-pose.pt) and move them to the working directory {yolov7-w6-pose,pt}
+ - Download yolov8 detection weights from [link](https://github.com/ultralytics/ultralytics) and move them to the working directory {yolov8x,pt}
 
  ### Run the code with mentioned command below.
 
  ```
  #baseline
- python pose-estimate.py
+ python size_monitoring.py
 
+ # data directory
+ data_path = "preprocessing/nii2video/*"
+ 
  #if you want to change source file
  python pose-estimate.py --source "your custom video.mp4"
 
@@ -84,6 +52,4 @@
 
 
 # Reference
-- https://github.com/WongKinYiu/yolov7
-- https://github.com/WongKinYiu/yolov7/releases
-- https://learnopencv.com/yolov7-object-detection-paper-explanation-and-inference/
+- https://github.com/ultralytics/ultralytics.git
