@@ -1,4 +1,4 @@
-# Size Monitoring by YOLOv8  
+# Size Monitoring by YOLOv8 :heavy_check_mark:
 The algorithm is elaborated on our paper [Deep Learning-Based Pancreas Detection and Size Monitoring with Data Augmentation for Medical Imaging Analysis(KSC 2023)](https://github.com/ready2drop/size-monitoring/blob/main/paper.pdf)
 # Steps to run Code
  
