@@ -1,5 +1,5 @@
 # Size Monitoring by YOLOv8  
-The algorithm is elaborated on our paper [Link Text](https://github.com/ready2drop/Size-monitoring/paper.pdf)
+The algorithm is elaborated on our [paper](https://github.com/ready2drop/Size-monitoring/paper.pdf)
 # Steps to run Code
  
  ### If you are using google colab then you will first need to mount the drive with mentioned command first, (Windows or Linux users) both can skip this step.
